@@ -1,0 +1,87 @@
+.App {
+  height: 100vh;
+  overflow: hidden;
+
+  &-header {
+    background: #1e878e;
+    height: 10vh;
+    padding: 5px 15px;
+    border-bottom: 2px solid black;
+    justify-content: space-between;
+  }
+}
+
+.header {
+  &__img, &__btn-img {
+    height: 100%;
+
+    &-cont {
+      height: 10vh;
+      margin-right: 20px;
+    }
+  }
+
+  &__logo {
+    color: #ffc600;
+    font-weight: bold;
+    font-size: 44px;
+    text-decoration-line: underline;
+    cursor: pointer;
+    &:hover{
+      color: black;
+    }
+  }
+  &__btn{
+    height: 80%;
+    cursor: pointer;
+    &-img{
+      height: 100%;
+      width: 100%;
+      fill: #FFC900A3;
+    }
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+
+  &-track {
+    background: #e7c77b;
+  }
+
+  &-thumb {
+    background: #5b523c;
+
+    &:hover {
+      background: #4f3d15;
+    }
+  }
+}
+
+.col__header {
+  background: #00ce74
+}
+
+.bg {
+  position: relative;
+  background: #b39b63;
+  height: 90vh;
+}
+
+.loader {
+  position: absolute;
+  font-size: 100px;
+  top: 50%;
+  width: 100%;
+  background: #8f8f8f9e;
+  text-align: center;
+  transform: translate(0, -50%);
+  padding: 10vh 0;
+}
+
+.active{
+  fill: rgb(255, 205, 2);
+  &:hover{
+    fill: #bb3e00;
+  }
+}

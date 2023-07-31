@@ -1,0 +1,38 @@
+.panel {
+  overflow-x: auto;
+  width: 30%;
+  border: 3px solid black;
+  border-top: none;
+  background: #847249;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 0 20px;
+  &__del-btn {
+    background: #ad0c0c;
+    color: white;
+    width: 10%;
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+  }
+
+  &__card {
+    width: 90%;
+    background: #007152;
+    color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    &-cont {
+      margin: 10px;
+      box-shadow: 0 0 3px 1px black;
+    }
+
+    &-title {
+      padding: 5px 0;
+      width: 100%;
+    }
+  }
+}

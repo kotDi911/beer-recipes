@@ -1,0 +1,104 @@
+.container {
+  margin-top: 15px;
+  background: #add8e6;
+  padding: 5px;
+}
+
+.img__cont {
+  height: 55vh;
+  border: 2px solid black;
+  padding: 20px;
+  margin-right: 15px;
+  background: #add8e6;
+  box-shadow: inset 0 0 5px 2px black;
+}
+
+.chapter {
+  background: #1e878e;
+}
+
+.details {
+  &__grid {
+    grid-template-columns: repeat(9, 1fr);
+  }
+
+  &__cont {
+    width: 100%;
+    position: relative;
+    padding: 20px 5px;
+    background: #d7c292e0;
+    overflow-y: scroll;
+  }
+
+  &__img {
+    height: 100%;
+  }
+
+  &__close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+    background: lightblue;
+    padding: 5px 10px;
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 50%;
+    font-weight: bold;
+
+    &:hover {
+      background: red;
+      color: white;
+    }
+  }
+}
+
+.description-text {
+  padding-top: 10px;
+}
+
+.align-center, .twist__title, .twist__desc {
+  text-align: center;
+}
+
+.details__grid, .hops__grid, .malt__grid, .temp__grid, .yeast__grid, .ferm__grid {
+  display: grid;
+  border: 2px solid black;
+  text-align: center;
+  gap: 1px;
+  background: black;
+  margin-top: 15px;
+}
+
+.hops__grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.malt__grid, .temp__grid, .yeast__grid, .ferm__grid {
+  grid-template-columns: 1fr 1fr;
+}
+
+.twist {
+  margin-top: 15px;
+  border: 2px solid black;
+
+  &__title {
+    border-bottom: 1px solid;
+  }
+}
+
+.title {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.col__header, .twist__title {
+  background: #4c9374;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.row, .twist__desc {
+  padding: 5px 0;
+  background: white;
+}
